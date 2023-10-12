@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url("https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg") no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+header {
+
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(52, 152, 219, 0.8);
+    color: white;
+}
+
+#myHeading {
+    margin: 0;
+}
+
+h1{
+    font-size: 40px;
+    font-style: italic;
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* Rest of your existing styles */
+
+.schedule {
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(63, 107, 217, 0.8);
+    padding: 5px;
+    margin-top: 4%;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.list li {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 3%;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+
+    background-color: rgba(63, 204, 217, 0.6);
+    border-radius: 10%;
+}
+.list li:hover {
+    background-color: rgba(63, 204, 217, 0.9);
+}
+#post {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.6);
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 3px rgb(255,0,0) solid;
+
+}
+
+#post h3 {
+    color: #e74c3c;
+    padding: 10px;
+    border-bottom: 2px rgba(115, 115, 115, 0.34) solid;
+}
+#post a{
+    color:#000;
+    text-decoration: none;
+}
+#post a:hover{
+    text-decoration: underline;
+}
+.description {
+    font-style: italic;
+    margin-left: 86%;
+}
+
+.footer {
+    margin-top: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(63, 66, 64, 0.6);
+    color: white;
+    text-align: right;
+    width: 100%;
+}
+.footer a{
+    color:white;
+}
+.footer p{
+    font-size: 10px;
+}
+@media (max-width: 768px) {
+
+    h2 {
+        top: 60px;
+        font-size: 20px;
+    }
+    header{
+        padding: 30px;
+    }
+}
