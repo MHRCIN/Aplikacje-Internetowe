@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarządzanie Zadaniami</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<h1>Zarządzanie Zadaniami</h1>
 
+<input type="text" id="searchInput" placeholder="Wyszukiwanie" oninput="filterTasks()">
+
+<ul id="taskList">
+
+</ul>
+
+<input type="text" id="newTask" placeholder="Dodaj nowe zadanie" oninput="validateInput()">
+<input type="datetime-local" id="taskDueDate">
+<button onclick="addTask()">Dodaj zadanie</button>
+
+<script src="scripts.js"></script>
 </body>
 </html>
