@@ -1,0 +1,89 @@
+/* Resetowanie domyślnych styli przeglądarek */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stylowanie całej strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    font-size: 26px
+}
+
+/* Nagłówek */
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Pola do wprowadzania tekstu */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Pole wyboru daty i czasu */
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Przycisk */
+button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Przycisk po najechaniu myszką */
+button:hover {
+    background-color: #005e9e;
+}
+
+/* Lista zadań */
+ul {
+
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Ustaw listę na środek */
+}
+
+/* Pozycje na liście zadań */
+li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+li span {
+    list-style-type: none; /* Usuń numerację listy */
+    text-align: center;
+
+}
+input[type="checkbox"] {
+    transform: scale(2); /* Zwiększa rozmiar checkboxa o 2 razy */
+    margin-right: 10px; /* Dodaj trochę odstępu między checkboxem a tekstem zadania */
+    margin-left: 10px;
+}
