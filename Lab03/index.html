@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title> Puzzle</title>
+
+
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+
+</head>
+
+<body>
+
+    <div id="left">
+        <div id="map_browser"></div>
+        <canvas id="puzzles"></canvas>
+    </div>
+
+
+    <div id="buttons">
+        <button id="getLocation">Get Location</button>
+        <button id="saveButton">Save raster map</button>
+        <button id="puzzle">Puzzle It!</button>
+    </div>
+
+
+    <div id="right">
+        <div id="puzzle_box"></div>
+        <div id="solving_box"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

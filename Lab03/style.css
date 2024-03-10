@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8eff5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+    overflow: auto;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+#map_browser, #puzzles, #puzzle_box, #solving_box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+}
+
+
+#puzzle_box, #solving_box {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+
+
+.part {
+    width: 100%;
+    height: 75px;
+    transition: transform 0.2s;
+}
+
+.part:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.target {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #ddd;
+}
+
+@media (max-width: 1200px) {
+    body {
+        flex-direction: column;
+    }
+
+    #map_browser, #puzzles, #puzzle_box, #solving_box {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #controls {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
