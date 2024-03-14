@@ -1,0 +1,106 @@
+/* Ogólny styl strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Ciemne tło dla całej strony */
+    color: #e0e0e0; /* Jasny tekst */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styl nagłówka */
+#weather-search-params h1 {
+    background-color: #1c1c1c; /* Ciemniejszy odcień dla nagłówka */
+    color: #fff; /* Biały tekst */
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #333; /* Delikatna linia oddzielająca */
+    margin-bottom: 20px;
+}
+
+/* Styl pola wyszukiwania i przycisku */
+#weather-search-params {
+    margin: 20px 0;
+}
+
+#locationInput {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1c1c1c; /* Dopasowanie do ciemnego motywu */
+    color: #fff; /* Biały tekst */
+}
+
+#checkButton {
+    padding: 11px 20px;
+    background-color: #0d6efd; /* Niebieski akcent */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size:18px
+}
+
+#checkButton:hover {
+    background-color: #0a58ca;
+}
+
+/* Styl kontenera z wynikami */
+#weather-results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styl poszczególnych bloków z danymi pogodowymi */
+.weather-block {
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 350px;
+    background-color: #1c1c1c; /* Ciemne tło dla bloku */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+.weather-date {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4dd0e1; /* Akcent kolorystyczny */
+}
+
+.weather-temperature {
+    color: #ff8a65; /* Kolor dla temperatury */
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.weather-temperature-feels-like {
+    color: #fff176; /* Kolor dla odczuwalnej temperatury */
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.weather-icon {
+    width: 100px;  /* Zwiększony rozmiar ikony */
+    height: 100px; /* Zwiększony rozmiar ikony */
+    float: right;
+    margin: -10px 0 10px 10px;
+}
+
+.weather-description {
+    color: #aed581; /* Kolor dla opisu */
+    font-size: 16px;
+}
+.location-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
